@@ -1,0 +1,39 @@
+*{
+  font-family: arial;
+}
+
+.calculationstring {
+  margin: auto;
+  width: 800px;
+  border: 2px solid black;
+}
+
+#calculation{
+  width: 60%;
+  height: 100px;
+  color: blue;
+  font-size: 100px;
+}
+span {
+  font-size: 100px;
+}
+
+.numblock{
+
+}
+
+#numblock{
+  width: 800px;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 100px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td:hover {
+  background-color: red;
+}
