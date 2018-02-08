@@ -1,109 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>mobile calculator</title>
-    <link rel="stylesheet" href="style/stylesheet.css">
-  </head>
+	<head>
+		<meta charset="utf-8">
+		<title>mobile calculator</title>
+		<link rel="stylesheet" href="style/stylesheet.css">
+	</head>
 
-  <body>
-    <p id="test"></p>
-    <div class="calculationstring">
-      <input id="calculation" type="text" name="" value="">
-      <span onclick="equal()">=</span>
-      <span id="Ergebnis"></span>
-    </div>
-    <div class="numblock">
-      <table id="numblock">
-        <tr>
-          <td onclick="numblock7()">7</td>
-          <td onclick="numblock8()">8</td>
-          <td onclick="numblock9()">9</td>
-        </tr>
-        <tr>
-          <td onclick="numblock4()">4</td>
-          <td onclick="numblock5()">5</td>
-          <td onclick="numblock6()">6</td>
-        </tr>
-        <tr>
-          <td onclick="numblock1()">1</td>
-          <td onclick="numblock2()">2</td>
-          <td onclick="numblock3()">3</td>
-        </tr>
-      </table>
-    </div>
-  </body>
-
-  <script type="text/javascript">
-
-  var calculationNumbers = "";
-  var num7 = 7;
-  var calculationEquals = 0;
-
-  function equal(){
-    Ergebnis.innerHTML = calculationEquals;
-  }
-
-  function numblock7() {
-      calculationNumbers = calculationNumbers + " + 7";
-      calculationEquals = calculationEquals + 7;
-      test.innerHTML = calculationNumbers;
-  }
-
-  function numblock8() {
-    calculationNumbers = calculationNumbers + " + 8";
-    calculationEquals = calculationEquals + 8;
-    test.innerHTML = calculationNumbers;
-  }
-
-  function numblock9() {
-    calculationNumbers = calculationNumbers + " + 9";
-    calculationEquals = calculationEquals + 9;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock4() {
-    calculationNumbers = calculationNumbers + " + 4";
-    calculationEquals = calculationEquals + 4;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock5() {
-    calculationNumbers = calculationNumbers + " + 5";
-    calculationEquals = calculationEquals + 5;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock6() {
-    calculationNumbers = calculationNumbers + " + 6";
-    calculationEquals = calculationEquals + 6;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock1() {
-    calculationNumbers = calculationNumbers + " + 1";
-    calculationEquals = calculationEquals + 1;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock2() {
-    calculationNumbers = calculationNumbers + " + 2";
-    calculationEquals = calculationEquals + 2;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  function numblock3() {
-    calculationNumbers = calculationNumbers + " + 3";
-    calculationEquals = calculationEquals + 3;
-    test.innerHTML = calculationNumbers;
-  }
-
-
-  </script>
+<body>
+	<script type="text/javascript" src="scripts/java.js"></script>
+	<div class="calculationstring">
+		<span id="test">^</span>
+		<span id="Ergebnis"></span>
+	</div>
+	<div class="numblock">
+		<table id="numblock">
+			<tr>
+				<td onClick="reset()">C</td>
+				<td>(</td>
+				<td>)</td>
+				<td>*</td>
+			</tr>
+			<tr>
+				<td onclick="numblock7()">7</td>
+				<td onclick="numblock8()">8</td>
+				<td onclick="numblock9()">9</td>
+				<td>/</td>
+			</tr>
+			<tr>
+				<td onclick="numblock4()">4</td>
+				<td onclick="numblock5()">5</td>
+				<td onclick="numblock6()">6</td>
+				<td onClick="minus()">-</td>
+			</tr>
+			<tr>
+				<td onclick="numblock1()">1</td>
+				<td onclick="numblock2()">2</td>
+				<td onclick="numblock3()">3</td>
+				<td onClick="plus()">+</td>
+			</tr>
+			<tr>
+				<td colspan="2">0</td>
+				<td>,</td>
+				<td onClick="equal()">=</td>
+			</tr>
+		</table>
+	</div>
+</body>
 </html>

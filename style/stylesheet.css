@@ -1,21 +1,23 @@
 *{
-  font-family: arial;
+	font-family: arial;
 }
 
 .calculationstring {
-  margin: auto;
-  width: 800px;
-  border: 1px solid black;
+	margin: auto;
+	width: 800px;
+	border: 1px solid black;
 }
 
-#calculation{
-  width: 60%;
-  height: 100px;
-  color: blue;
-  font-size: 100px;
+#test{
+	width: 60%;
+	height: 100px;
+	color: blue;
+	font-size: 100px;
+	text-align: right;
 }
 span {
-  font-size: 100px;
+	font-size: 100px;
+	height: 120px;
 }
 
 .numblock{
@@ -23,17 +25,18 @@ span {
 }
 
 #numblock{
-  width: 800px;
-  margin: auto;
-  border: 1px solid black;
-  text-align: center;
-  font-size: 100px;
+	width: 800px;
+	margin: auto;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 100px;
+	border-collapse: collapse;
 }
 
 td {
-  border: 1px solid black;
+	border: 1px solid black;
 }
 
 td:hover {
-  background-color: #A4A4A4;
+	background-color: #A4A4A4;
 }
