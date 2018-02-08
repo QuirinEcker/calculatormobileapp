@@ -7,27 +7,28 @@
   </head>
 
   <body>
+    <p id="test"></p>
     <div class="calculationstring">
       <input id="calculation" type="text" name="" value="">
-      <span>=</span>
-      <span id="Ergebnis">75</span>
+      <span onclick="equal()">=</span>
+      <span id="Ergebnis"></span>
     </div>
     <div class="numblock">
       <table id="numblock">
         <tr>
-          <td>9</td>
-          <td>8</td>
-          <td>7</td>
+          <td onclick="numblock7()">7</td>
+          <td onclick="numblock8()">8</td>
+          <td onclick="numblock9()">9</td>
         </tr>
         <tr>
-          <td>6</td>
-          <td>5</td>
-          <td>4</td>
+          <td onclick="numblock4()">4</td>
+          <td onclick="numblock5()">5</td>
+          <td onclick="numblock6()">6</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>2</td>
-          <td>1</td>
+          <td onclick="numblock1()">1</td>
+          <td onclick="numblock2()">2</td>
+          <td onclick="numblock3()">3</td>
         </tr>
       </table>
     </div>
@@ -35,9 +36,74 @@
 
   <script type="text/javascript">
 
-  function num1() {
+  var calculationNumbers = "";
+  var num7 = 7;
+  var calculationEquals = 0;
 
+  function equal(){
+    Ergebnis.innerHTML = calculationEquals;
   }
+
+  function numblock7() {
+      calculationNumbers = calculationNumbers + " + 7";
+      calculationEquals = calculationEquals + 7;
+      test.innerHTML = calculationNumbers;
+  }
+
+  function numblock8() {
+    calculationNumbers = calculationNumbers + " + 8";
+    calculationEquals = calculationEquals + 8;
+    test.innerHTML = calculationNumbers;
+  }
+
+  function numblock9() {
+    calculationNumbers = calculationNumbers + " + 9";
+    calculationEquals = calculationEquals + 9;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock4() {
+    calculationNumbers = calculationNumbers + " + 4";
+    calculationEquals = calculationEquals + 4;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock5() {
+    calculationNumbers = calculationNumbers + " + 5";
+    calculationEquals = calculationEquals + 5;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock6() {
+    calculationNumbers = calculationNumbers + " + 6";
+    calculationEquals = calculationEquals + 6;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock1() {
+    calculationNumbers = calculationNumbers + " + 1";
+    calculationEquals = calculationEquals + 1;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock2() {
+    calculationNumbers = calculationNumbers + " + 2";
+    calculationEquals = calculationEquals + 2;
+    test.innerHTML = calculationNumbers;
+  }
+
+
+  function numblock3() {
+    calculationNumbers = calculationNumbers + " + 3";
+    calculationEquals = calculationEquals + 3;
+    test.innerHTML = calculationNumbers;
+  }
+
 
   </script>
 </html>
