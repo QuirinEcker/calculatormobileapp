@@ -5,7 +5,7 @@
 .calculationstring {
   margin: auto;
   width: 800px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 #calculation{
@@ -35,5 +35,5 @@ td {
 }
 
 td:hover {
-  background-color: red;
+  background-color: #A4A4A4;
 }
