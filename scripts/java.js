@@ -32,6 +32,12 @@ function equal(){
 function calculate(operation) {
 		if(currentOperation !== ""){
 		switch(currentOperation){
+			case ",":
+				currentDigitSave = currentDigit;
+				break;
+			case ("+" || "-" || "/" || "*"):
+				accumulator *= 10 ^ currentDigitSave;
+				break;
 			case "+":
 				accumulator += currentNumber;
 				break;
@@ -43,9 +49,6 @@ function calculate(operation) {
 				break;
 			case "/":
 				accumulator /= currentNumber;
-				break;
-			case ",":
-				currentDigitSave = currentDigit;
 				break;
 	   }
 	} else {
