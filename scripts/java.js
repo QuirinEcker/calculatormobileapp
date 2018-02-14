@@ -7,6 +7,7 @@ var component = 0;
 var operator = "";
 
 var currentDigit = 0;
+var currentDigitSave = 0;
 var currentNumber = 0;
 var currentOperation = "";
 var accumulator = 0;
@@ -31,7 +32,7 @@ function equal(){
 function calculate(operation) {
 		if(currentOperation !== ""){
 		switch(currentOperation){
-			case "+": 
+			case "+":
 				accumulator += currentNumber;
 				break;
 			case "-":
@@ -42,6 +43,9 @@ function calculate(operation) {
 				break;
 			case "/":
 				accumulator /= currentNumber;
+				break;
+			case ",":
+				currentDigitSave = currentDigit;
 				break;
 	   }
 	} else {
