@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Mobile App: Calculator (Design)</title>
 		<link rel="stylesheet" href="style/stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	</head>
 
 	<body>
@@ -12,10 +13,10 @@
 			<span id="output">^</span>
 			<span id="Ergebnis"></span>
 		</div>
-	  <div class="dropdownmenu">
-				<p style="float: left;">.</p>
-				<p style="float: left;">.</p>
-				<p style="float: left;">.</p>
+	  <a href="" <div class="menu">
+				<p class="menupoint">.</p>
+				<p class="menupoint">.</p>
+				<p class="menupoint">.</p>
 	  </div>
 		<div class="numblock">
 			<table id="numblock">
@@ -23,7 +24,7 @@
 					<td class="operations" onClick="reset()">C</td>
 					<td class="operations">(</td>
 					<td class="operations">)</td>
-					<td class="operations">x</td>
+					<td class="operations" onclick="multiply()">x</td>
 				</tr>
 				<tr>
 					<td class="numbs" onclick="numblock7()">7</td>
@@ -44,8 +45,8 @@
 					<td class="operations" onClick="plus()">+</td>
 				</tr>
 				<tr>
-					<td class="operations" colspan="2">0</td>
-					<td class="operations">,</td>
+					<td class="operations" colspan="2" onClick="numblock0">0</td>
+					<td class="operations" onclick="comma()">,</td>
 					<td class="equal" onClick="equal()">=</td>
 				</tr>
 			</table>
