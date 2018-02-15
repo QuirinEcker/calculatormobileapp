@@ -2,48 +2,53 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>mobile calculator</title>
+		<title>Mobile App: Calculator (Design)</title>
 		<link rel="stylesheet" href="style/stylesheet.css">
 	</head>
 
-<body>
-	<script type="text/javascript" src="scripts/java.js"></script>
-	<div class="calculationstring">
-		<span id="test">^</span>
-		<span id="Ergebnis"></span>
-	</div>
-	<div class="numblock">
-		<table id="numblock">
-			<tr>
-				<td onClick="reset()">C</td>
-				<td>(</td>
-				<td>)</td>
-				<td onClick="multiply()">*</td>
-			</tr>
-			<tr>
-				<td onclick="numblock7()">7</td>
-				<td onclick="numblock8()">8</td>
-				<td onclick="numblock9()">9</td>
-				<td onClick="divide()">/</td>
-			</tr>
-			<tr>
-				<td onclick="numblock4()">4</td>
-				<td onclick="numblock5()">5</td>
-				<td onclick="numblock6()">6</td>
-				<td onClick="minus()">-</td>
-			</tr>
-			<tr>
-				<td onclick="numblock1()">1</td>
-				<td onclick="numblock2()">2</td>
-				<td onclick="numblock3()">3</td>
-				<td onClick="plus()">+</td>
-			</tr>
-			<tr>
-				<td onclick="numblock0()" colspan="2">0</td>
-				<td>,</td>
-				<td onClick="equal()">=</td>
-			</tr>
-		</table>
-	</div>
-</body>
+	<body>
+		<script type="text/javascript" src="scripts/java.js"></script>
+		<div class="calculationstring">
+			<span id="output">^</span>
+			<span id="Ergebnis"></span>
+		</div>
+	  <div class="dropdownmenu">
+				<p style="float: left;">.</p>
+				<p style="float: left;">.</p>
+				<p style="float: left;">.</p>
+	  </div>
+		<div class="numblock">
+			<table id="numblock">
+				<tr>
+					<td class="operations" onClick="reset()">C</td>
+					<td class="operations">(</td>
+					<td class="operations">)</td>
+					<td class="operations">x</td>
+				</tr>
+				<tr>
+					<td class="numbs" onclick="numblock7()">7</td>
+					<td class="numbs" onclick="numblock8()">8</td>
+					<td class="numbs" onclick="numblock9()">9</td>
+					<td class="operations">/</td>
+				</tr>
+				<tr>
+					<td class="numbs" onclick="numblock4()">4</td>
+					<td class="numbs" onclick="numblock5()">5</td>
+					<td class="numbs" onclick="numblock6()">6</td>
+					<td class="operations" onClick="minus()">-</td>
+				</tr>
+				<tr>
+					<td class="numbs" onclick="numblock1()">1</td>
+					<td class="numbs" onclick="numblock2()">2</td>
+					<td class="numbs" onclick="numblock3()">3</td>
+					<td class="operations" onClick="plus()">+</td>
+				</tr>
+				<tr>
+					<td class="operations" colspan="2">0</td>
+					<td class="operations">,</td>
+					<td class="equal" onClick="equal()">=</td>
+				</tr>
+			</table>
+		</div>
+	</body>
 </html>
