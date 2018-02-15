@@ -19,19 +19,25 @@ span {
 	font-size: 100px;
 	height: 120px;
 }
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+.dropbtn {
+		background-color: white;
+    border: 1px solid black;
+		border-radius: 180px;
+		height: 40px;
+}
 .menupoint		{
 		float: left;
 		font-size: 200%;
 		font-family: 'Pacifico', cursive;
 		padding-right: 3px;
 }
-.dropbtn {
-		background-color: wheat;
-    border: none;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
+.menupoint2		{
+		position: absolute;
+		top: 20px;
 }
 .dropdown-content {
     display: none;
