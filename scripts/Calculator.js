@@ -7,6 +7,8 @@ var currentDigitSave = 0;
 var currentNumber = 0;
 var currentOperation = "";
 var accumulator = 0;
+var historyDigit = 0;
+var calculationHistory = [];
 
 function equal(){
 	output.innerHTML = "";
@@ -23,6 +25,7 @@ function equal(){
 	calculate('');
 	currentNumber = 0;
 	Ergebnis.innerHTML = accumulator;
+	storeHistory();
 }
 
 function calculate(operation) {
@@ -48,6 +51,12 @@ function calculate(operation) {
 		accumulator = currentNumber;
 	}
 	currentOperation = operation;
+}
+
+function storeHistory() {
+	historyDigit++;
+	calculationHistory[historyDigit] = accumulator;
+	historyDisplay.innerHTML = calculationHistory[historyDigit]:
 }
 
 function reset() {

@@ -16,6 +16,7 @@ body	{
 	width: 800px;
 	height: 150px;
 	border: 1px solid black;
+	overflow: scroll;
 }
 #output{
 	width: 100%;
