@@ -55,8 +55,8 @@ function calculate(operation) {
 
 function storeHistory() {
 	historyDigit++;
-	calculationHistory[historyDigit] = accumulator;
-	historyDisplay.innerHTML = calculationHistory[historyDigit]:
+	calculationHistory[historyDigit] = calculationNumbers + "=" + accumulator;
+	historyDisplay.innerHTML = calculationHistory[historyDigit];
 }
 
 function reset() {
