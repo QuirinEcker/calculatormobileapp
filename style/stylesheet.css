@@ -1,0 +1,103 @@
+/*Allgemeine Anweisungen*/
+*{
+	font-family: Arial;
+	color: black;
+}
+body	{
+
+}
+#wrapper		{
+
+}
+
+/*Ausgabe*/
+.calculationstring {
+	margin: auto;
+	width: 800px;
+	height: 150px;
+	border: 1px solid black;
+}
+#output{
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+	text-align: right;
+	z-index: 0;
+}
+span {
+	font-size: 100px;
+	height: 120px;
+}
+p			{
+	z-index: 17;
+	float: right;
+}
+/*Side Menu - !!Animation fehlt noch!!*/
+.sidemenu {
+    position: absolute;
+    display: inline-block;
+}
+.sidemenubtn {
+		background-color: white;
+    border: 1px solid black;
+		border-radius: 180px;
+		height: 40px;
+}
+.sidemenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+		min-height: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.sidemenu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.sidemenu-content a:hover {
+	background-color: #ddd;
+}
+.sidemenu:hover .sidemenu-content {
+    display: block;
+}
+
+/*Numblock*/
+.numblock{
+
+}
+#numblock			{
+	margin: auto;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 75px;
+	border-collapse: collapse;
+}
+td		 {
+	border: 1px solid black;
+	height: 15px;
+	width: 15px;
+}
+.numbs		{
+	background-color: white;
+}
+.operations		{
+	background-color: #dbdcdc;
+	margin: 3px;
+	color: #00a2d7;
+}
+.equal 			{
+	color: white;
+	background-color: #56c95b;
+}
+.equal:hover		{
+	color: white;
+	background-color: black;
+	opacity: 0.3;
+}
+td:hover {
+	background-color: #B8B8B8;
+}
