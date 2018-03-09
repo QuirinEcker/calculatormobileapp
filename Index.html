@@ -5,6 +5,7 @@
 		<title>Mobile App: Calculator</title>
 		<link rel="stylesheet" href="style/stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link rel="stylesheet" href="style/history.css">
 	</head>
 
 	<body id="wrapper">
@@ -33,6 +34,7 @@
 
 		<script type="text/javascript" src="scripts/Calculator.js"></script>
 		<script type="text/javascript" src="scripts/numblock.js"></script>
+		<script type="text/javascript" src="scripts/history.js"></script>
 		
 		<div class="calculationstring">
 			<p id="historyDisplay">=</p>
@@ -60,6 +62,14 @@
 		</div>
 		
 		<div class="numblock">
+			
+			<div class="historyContainer">
+				<button onClick="toggleHistory()">spoiler history</button>
+				<h1>HISTORY</h1>
+				<ul id="history">
+				</ul>
+			</div>
+			
 			<table id="numblock">
 				<tr>
 					<td class="operations" onClick="reset()">C</td>

@@ -27,7 +27,7 @@ function equal(){
 	calculate('');
 	currentNumber = 0;
 	Ergebnis.innerHTML = accumulator;
-	storeHistory();
+	storeHistory(calculationNumbers + "=" + accumulator);
 }
 
 function calculate(operation) {
@@ -53,12 +53,6 @@ function calculate(operation) {
 		accumulator = currentNumber;
 	}
 	currentOperation = operation;
-}
-
-function storeHistory() {
-	historyDigit++;
-	calculationHistory[historyDigit] = calculationNumbers + "=" + accumulator;
-	historyDisplay.innerHTML = calculationHistory[historyDigit];
 }
 
 function reset() {

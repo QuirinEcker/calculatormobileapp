@@ -1,0 +1,12 @@
+#history {
+	position: absolute;
+	background-color: grey;
+	z-index: 50;
+	width: 400px;
+	height: 700px;
+	margin: auto;
+}
+
+.historyContainer {
+	float: right;
+}

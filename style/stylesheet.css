@@ -73,6 +73,7 @@ p {
 /*Numblock*/
 
 #numblock {
+	z-index: 0;
 	margin: auto;
 	border: 1px solid black;
 	text-align: center;
