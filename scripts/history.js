@@ -17,7 +17,6 @@ function storeHistory(historyline) {
 
 function fetchHistory(entry) {
 	reset();
-	alert(entry.textContent);
 	calculationNumbers = entry.textContent;
 	output.innerHTML = calculationNumbers;
 }

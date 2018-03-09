@@ -1,8 +1,5 @@
 "use strict";
 
-var calculationNumber = "^"
-
-
 function plus() {
 	calculationNumbers = calculationNumbers + "+";
 	output.innerHTML = calculationNumbers;
