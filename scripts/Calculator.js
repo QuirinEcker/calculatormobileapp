@@ -10,6 +10,8 @@ var accumulator = 0;
 var historyDigit = 0;
 var calculationHistory = [];
 
+reset();
+
 function equal(){
 	output.innerHTML = "";
 	accumulator = 0;
