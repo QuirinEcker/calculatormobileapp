@@ -1,21 +1,6 @@
-/*Allgemeine Anweisungen*/
 * {
 	font-family: Arial;
 	color: black;
-}
-
-.wrapper {
-	width: 40%;
-	margin: auto;
-	height: 750px;
-}
-
-/*Ausgabe*/
-.calculationstring {
-	width: 40%;
-	height: 150px;
-	border: 1px solid black;
-	overflow: scroll;
 }
 
 #output {
@@ -26,27 +11,12 @@
 	z-index: 0;
 }
 
-span {
-	font-size: 100px;
-	height: 120px;
-}
-
 p {
 	z-index: 17;
 	float: right;
 }
 
 /*Numblock*/
-
-#numblock {
-	width: 40%;
-	height: 600px;
-	border: 1px solid black;
-	text-align: center;
-	font-size: 75px;
-	border-collapse: collapse;
-}
-
 td {
 	border: 1px solid black;
 	height: 15px;
@@ -76,11 +46,4 @@ td {
 
 td:hover {
 	background-color: #B8B8B8;
-}
-
-
-
-.sidemenubtnImg {
-	width: 40px;
-	height: 40px;
 }
