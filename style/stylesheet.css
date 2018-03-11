@@ -18,6 +18,7 @@ body {
 	border: 1px solid black;
 	overflow: scroll;
 }
+
 #output {
 	width: 100%;
 	height: 100%;
@@ -25,25 +26,31 @@ body {
 	text-align: right;
 	z-index: 0;
 }
+
 span {
 	font-size: 100px;
 	height: 120px;
 }
+
 p {
 	z-index: 17;
 	float: right;
 }
+
 /*Side Menu - !!Animation fehlt noch!!*/
 .sidemenu {
-	position: absolute;
-	display: inline-block;
+	width: 50px;
+	height: 50px;
+	float: right;
 }
+
 .sidemenubtn {
-	background-color: white;
-	border: 1px solid black;
-	border-radius: 180px;
-	height: 40px;
+/*	background-image: url("../img/png_file_menuBar/MenuBarLightGreen.png");*/
+	background-size: cover;
+	width: 100px;
+	height: 100px;
 }
+
 
 .sidemenu-content {
 	display: none;
@@ -110,4 +117,11 @@ td {
 
 td:hover {
 	background-color: #B8B8B8;
+}
+
+
+
+#sidemenubtnImg {
+	width: 50px;
+	height: 50px;
 }
