@@ -1,6 +1,10 @@
 function toggleHistory() {
 	let historyContainer = document.getElementById("historyContainer");
+	let spoiledSideMenu = document.getElementById("sidemenuContent");
     if (historyContainer.style.display === "none") {
+		if (spoiledSideMenu.style.display === "block"){
+			spoiledSideMenu.style.display = "none"
+		}
         historyContainer.style.display = "block";
     } else {
         historyContainer.style.display = "none";
