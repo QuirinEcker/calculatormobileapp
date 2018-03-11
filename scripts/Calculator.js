@@ -1,6 +1,6 @@
 "use strict";
 
-var calculationNumbers = "^" + calculationNumbers;
+var calculationNumbers = calculationNumbers;
 var calculationEquals = 0;
 var currentDigit = 0;
 var currentDigitSave = 0;
