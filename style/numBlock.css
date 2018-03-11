@@ -1,4 +1,4 @@
-#numblock {
+#numblockTable {
 	height: 80%;
 	border: 1px solid black;
 	text-align: center;
@@ -8,7 +8,7 @@
 }
 
 .calculationstring {
-	height: 10%;
+	height: 20%;
 	width: 100%;
 	border: 1px solid black;
 	overflow: scroll;

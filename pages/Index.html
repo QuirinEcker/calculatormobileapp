@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mobile App: Calculator</title>
-		<link rel="stylesheet" href="style/stylesheet.css">
+		<link rel="stylesheet" href="../style/stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-		<link rel="stylesheet" href="style/toggleMenus.css">
-		<link rel="stylesheet" href="style/sidemenu.css">
-		<link rel="stylesheet" href="style/numBlock.css">
+		<link rel="stylesheet" href="../style/toggleMenus.css">
+		<link rel="stylesheet" href="../style/sidemenu.css">
+		<link rel="stylesheet" href="../style/numBlock.css">
 	</head>
 
 	<body id="wrapper">
@@ -34,33 +34,32 @@
 		2.2.5	Buttons mit einem verschiebbare Balken (LabyMod3 Mneü - Inspiration) erstezten.
 		-->
 
-			<script type="text/javascript" src="scripts/Calculator.js"></script>
-			<script type="text/javascript" src="scripts/numblock.js"></script>
-			<script type="text/javascript" src="scripts/history.js"></script>
-			<script type="text/javascript" src="scripts/SideMenu.js"></script>
+			<script type="text/javascript" src="../scripts/Calculator.js"></script>
+			<script type="text/javascript" src="../scripts/numblock.js"></script>
+			<script type="text/javascript" src="../scripts/history.js"></script>
+			<script type="text/javascript" src="../scripts/SideMenu.js"></script>
 
 			<div class="calculationstring">
 				<span id="output"></span>
 				<span id="Ergebnis"></span>
 				
-				
 				<div class="menuButtons">
 					<div class="sidemenubtn" onClick="toggleSideMenu()">
-						<img class="sidemenubtnImg" src="img/menuBar/png_file_menuBar/MenuBarLightGreen.png" alt="">
+						<img class="sidemenubtnImg" src="../img/menuBar/png_file_menuBar/MenuBarLightGreen.png" alt="">
 					</div>
 					<div class="sidemenubtn" onClick="toggleHistory()">
-						<img class="sidemenubtnImg" src="img/history/png_history/HistoryLightGreen.png" alt="">
+						<img class="sidemenubtnImg" src="../img/history/png_history/HistoryLightGreen.png" alt="">
 					</div>
 					<div class="sidemenubtn" onClick="toggleHistory()">
-						<img class="sidemenubtnImg" src="img/Querformat:wTR/png_Querformat:wTR/QuerformatWTR.png" alt="">
-						<a href="pages/Querformat.html"></a>
+						<img class="sidemenubtnImg" src="../img/Querformat:wTR/png_Querformat:wTR/QuerformatWTR.png" alt="">
+						<a href="Querformat.html"></a>
 					</div>
 				</div>
 			</div>
 
 			<div class="numblock">
 				<div id="sidemenuContent">
-					<a href="pages/design.html">Design Individualisierung</a>
+					<a href="design.html">Design Individualisierung</a>
 					<a href="#">Wissenschaftlicher Taschenrechner</a>
 					<a href="#">Developer Taschenrechner</a>
 					<hr>
@@ -73,7 +72,7 @@
 					</ul>
 				</div>
 
-				<table id="numblock">
+				<table id="numblockTable">
 					<tr>
 						<td class="operations" onClick="reset()">C</td>
 						<td class="operations">(</td>
