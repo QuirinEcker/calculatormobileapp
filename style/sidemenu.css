@@ -1,0 +1,44 @@
+/*Side Menu - !!Animation fehlt noch!!*/
+.sidemenu {
+	width: 50px;
+	height: 50px;
+	float: right;
+}
+
+.sidemenubtn {
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+}
+
+
+#sidemenuContent {
+	display: block;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	min-height: 600px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 100;
+	width: 39.5%;
+	height: 600px;
+	left: 25.9%;
+	text-align: center;
+	font-size: 30px;
+}
+
+#sidemenuContent a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+#sidemenuContent a:hover {
+	background-color: #ddd;
+}
+
+/*.sidemenu:hover .sidemenu-content {
+	display: block;
+}
+*/

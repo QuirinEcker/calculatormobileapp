@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="style/stylesheet.css">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link rel="stylesheet" href="style/history.css">
+		<link rel="stylesheet" href="style/sidemenu.css">
 	</head>
 
 	<body id="wrapper">
@@ -35,28 +36,30 @@
 		<script type="text/javascript" src="scripts/Calculator.js"></script>
 		<script type="text/javascript" src="scripts/numblock.js"></script>
 		<script type="text/javascript" src="scripts/history.js"></script>
+		<script type="text/javascript" src="scripts/SideMenu.js"></script>
 		
 		<div class="calculationstring">
 			<span id="output">^</span>
 			<span id="Ergebnis"></span>
 			
 			<div class="sidemenu">
-				<div class="sidemenubtn" onClick="sidemenu"><img src="img/png_file_menuBar/MenuBarLightGreen.png" alt=""></div>
-				<div class="sidemenu-content">
-					<a href="pages/design.html">Design Individualisierung</a>
-					<a href="#">Wissenschaftlicher Taschenrechner</a>
-					<a href="#">Developer Taschenrechner</a>
-					<hr>
-					<a href="#">Support</a>
+				<div class="sidemenubtn" onClick="toggleSideMenu()">
+					<img id="sidemenubtnImg" src="img/png_file_menuBar/MenuBarLightGreen.png" alt="">
 				</div>
 			</div>
 		</div>
 		
 		<div class="numblock">
+			<div id="sidemenuContent">
+				<a href="pages/design.html">Design Individualisierung</a>
+				<a href="#">Wissenschaftlicher Taschenrechner</a>
+				<a href="#">Developer Taschenrechner</a>
+				<hr>
+				<a href="#">Support</a>
+			</div>
 			
 			<div class="historyContainer">
 				<button onClick="toggleHistory()">spoiler history</button>
-				<h1>HISTORY</h1>
 				<ul id="history">
 				</ul>
 			</div>
