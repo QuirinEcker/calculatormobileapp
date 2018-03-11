@@ -4,20 +4,18 @@
 	color: black;
 }
 
-body {
-}
-
-#wrapper {
+.wrapper {
+	width: 40%;
+	margin: auto;
+	height: 750px;
 }
 
 /*Ausgabe*/
 .calculationstring {
-	position: relative;
-	width: 39.89%;
+	width: 40%;
 	height: 150px;
 	border: 1px solid black;
 	overflow: scroll;
-	left: 25.6%;
 }
 
 #output {
@@ -43,8 +41,6 @@ p {
 #numblock {
 	width: 40%;
 	height: 600px;
-	z-index: 0;
-	margin: auto;
 	border: 1px solid black;
 	text-align: center;
 	font-size: 75px;

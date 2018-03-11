@@ -10,91 +10,92 @@
 	</head>
 
 	<body id="wrapper">
-	<!--
-	ToDo - List
-	1. Menü
-	1.1 Menü erstezten mit eine Menü das sich durch 3 waagrechte Striche die übereinander liegen geöffnet. Inspiration: "Google Play Store". Realisierungs Idee überlegen um dieses Menü zu realisieren.
-	1.2 Folgender Inhalt soll in dem Menü gezeigt werden:
-	1.2.0 Design Individualisierung
-	1.2.1 Developer Taschenrechner
-	1.2.2 *eventuell* Bruchlösung (Erweiterung für spätere Updates)
-	1.2.3 *eventuell* Gleichungslösung (Erweiterung für spätere Updates)
-	1.2.4 Support
+		<div class="wrapper"><!--
+		ToDo - List
+		1. Menü
+		1.1 Menü erstezten mit eine Menü das sich durch 3 waagrechte Striche die übereinander liegen geöffnet. Inspiration: "Google Play Store". Realisierungs Idee überlegen um dieses Menü zu realisieren.
+		1.2 Folgender Inhalt soll in dem Menü gezeigt werden:
+		1.2.0 Design Individualisierung
+		1.2.1 Developer Taschenrechner
+		1.2.2 *eventuell* Bruchlösung (Erweiterung für spätere Updates)
+		1.2.3 *eventuell* Gleichungslösung (Erweiterung für spätere Updates)
+		1.2.4 Support
 
-	2. Design Individualisierung:
-	2.1	!DONE! Übertrag von JavaScript zu CSS damit der Wert der Farbe die verändert werden sollte übertragen wird, mittels "onClick" - Befehl.
-	2.3	Ein paar (2-3) verschiedene vorinstallierte Designs (z.B. 1 ähnlich wie Apple Rechner, Freunde fragen ob die gute IDeen für ein Standard-Design haben).
-	2.2	Features:
-	2.2.0	für die nachfolgenden Punkte 2.2.1 - 2.2.4 vorerst mittels Buttons realisieren. Detailieren erfolgt im Schritt 2.2.5 .
-	2.2.1 Backgroundcolor
-	2.2.2	Schriftfarbe
-	2.2.3 Schriftgewicht
-	2.2.4 Schriftarten (ein paar verschiedene Schriftarten sowie Arial, Comic Sams, usw..)
-	2.2.5	Buttons mit einem verschiebbare Balken (LabyMod3 Mneü - Inspiration) erstezten.
-	-->
+		2. Design Individualisierung:
+		2.1	!DONE! Übertrag von JavaScript zu CSS damit der Wert der Farbe die verändert werden sollte übertragen wird, mittels "onClick" - Befehl.
+		2.3	Ein paar (2-3) verschiedene vorinstallierte Designs (z.B. 1 ähnlich wie Apple Rechner, Freunde fragen ob die gute IDeen für ein Standard-Design haben).
+		2.2	Features:
+		2.2.0	für die nachfolgenden Punkte 2.2.1 - 2.2.4 vorerst mittels Buttons realisieren. Detailieren erfolgt im Schritt 2.2.5 .
+		2.2.1 Backgroundcolor
+		2.2.2	Schriftfarbe
+		2.2.3 Schriftgewicht
+		2.2.4 Schriftarten (ein paar verschiedene Schriftarten sowie Arial, Comic Sams, usw..)
+		2.2.5	Buttons mit einem verschiebbare Balken (LabyMod3 Mneü - Inspiration) erstezten.
+		-->
 
-		<script type="text/javascript" src="scripts/Calculator.js"></script>
-		<script type="text/javascript" src="scripts/numblock.js"></script>
-		<script type="text/javascript" src="scripts/history.js"></script>
-		<script type="text/javascript" src="scripts/SideMenu.js"></script>
-		
-		<div class="calculationstring">
-			<span id="output">^</span>
-			<span id="Ergebnis"></span>
-			
-			<div class="sidemenu">
-				<div class="sidemenubtn" onClick="toggleSideMenu()">
-					<img id="sidemenubtnImg" src="img/png_file_menuBar/MenuBarLightGreen.png" alt="">
+			<script type="text/javascript" src="scripts/Calculator.js"></script>
+			<script type="text/javascript" src="scripts/numblock.js"></script>
+			<script type="text/javascript" src="scripts/history.js"></script>
+			<script type="text/javascript" src="scripts/SideMenu.js"></script>
+
+			<div class="calculationstring">
+				<span id="output">^</span>
+				<span id="Ergebnis"></span>
+
+				<div class="sidemenu">
+					<div class="sidemenubtn" onClick="toggleSideMenu()">
+						<img id="sidemenubtnImg" src="img/png_file_menuBar/MenuBarLightGreen.png" alt="">
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="numblock">
-			<div id="sidemenuContent">
-				<a href="pages/design.html">Design Individualisierung</a>
-				<a href="#">Wissenschaftlicher Taschenrechner</a>
-				<a href="#">Developer Taschenrechner</a>
-				<hr>
-				<a href="#">Support</a>
-			</div>
-			
-			<div class="historyContainer">
+
+			<div class="numblock">
+				<div id="sidemenuContent">
+					<a href="pages/design.html">Design Individualisierung</a>
+					<a href="#">Wissenschaftlicher Taschenrechner</a>
+					<a href="#">Developer Taschenrechner</a>
+					<hr>
+					<a href="#">Support</a>
+				</div>
+				
 				<button onClick="toggleHistory()">spoiler history</button>
-				<ul id="history">
-				</ul>
+				<div id="historyContainer">
+					<ul id="history">
+					</ul>
+				</div>
+
+				<table id="numblock">
+					<tr>
+						<td class="operations" onClick="reset()">C</td>
+						<td class="operations">(</td>
+						<td class="operations">)</td>
+						<td class="operations" onclick="multiply()">x</td>
+					</tr>
+					<tr>
+						<td class="numbs" onclick="numblock7()">7</td>
+						<td class="numbs" onclick="numblock8()">8</td>
+						<td class="numbs" onclick="numblock9()">9</td>
+						<td class="operations" onclick="divide()">/</td>
+					</tr>
+					<tr>
+						<td class="numbs" onclick="numblock4()">4</td>
+						<td class="numbs" onclick="numblock5()">5</td>
+						<td class="numbs" onclick="numblock6()">6</td>
+						<td class="operations" onClick="minus()">-</td>
+					</tr>
+					<tr>
+						<td class="numbs" onclick="numblock1()">1</td>
+						<td class="numbs" onclick="numblock2()">2</td>
+						<td class="numbs" onclick="numblock3()">3</td>
+						<td class="operations" onClick="plus()">+</td>
+					</tr>
+					<tr>
+						<td class="operations" colspan="2" onClick="numblock0">0</td>
+						<td class="operations" onclick="comma()">,</td>
+						<td class="equal" onClick="equal()">=</td>
+					</tr>
+				</table>
 			</div>
-			
-			<table id="numblock">
-				<tr>
-					<td class="operations" onClick="reset()">C</td>
-					<td class="operations">(</td>
-					<td class="operations">)</td>
-					<td class="operations" onclick="multiply()">x</td>
-				</tr>
-				<tr>
-					<td class="numbs" onclick="numblock7()">7</td>
-					<td class="numbs" onclick="numblock8()">8</td>
-					<td class="numbs" onclick="numblock9()">9</td>
-					<td class="operations" onclick="divide()">/</td>
-				</tr>
-				<tr>
-					<td class="numbs" onclick="numblock4()">4</td>
-					<td class="numbs" onclick="numblock5()">5</td>
-					<td class="numbs" onclick="numblock6()">6</td>
-					<td class="operations" onClick="minus()">-</td>
-				</tr>
-				<tr>
-					<td class="numbs" onclick="numblock1()">1</td>
-					<td class="numbs" onclick="numblock2()">2</td>
-					<td class="numbs" onclick="numblock3()">3</td>
-					<td class="operations" onClick="plus()">+</td>
-				</tr>
-				<tr>
-					<td class="operations" colspan="2" onClick="numblock0">0</td>
-					<td class="operations" onclick="comma()">,</td>
-					<td class="equal" onClick="equal()">=</td>
-				</tr>
-			</table>
 		</div>
 		
 		<br><br><br><br><br>

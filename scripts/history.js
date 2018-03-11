@@ -1,9 +1,9 @@
 function toggleHistory() {
-	let history = document.getElementById("history");
-    if (history.style.display === "none") {
-        history.style.display = "block";
+	let historyContainer = document.getElementById("historyContainer");
+    if (historyContainer.style.display === "none") {
+        historyContainer.style.display = "block";
     } else {
-        history.style.display = "none";
+        historyContainer.style.display = "none";
     }
 }
 
