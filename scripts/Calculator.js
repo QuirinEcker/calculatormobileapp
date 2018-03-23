@@ -57,7 +57,7 @@ function calculate(operation) {
 
 function reset() {
 	calculationEquals = 0;
-	calculationNumbers = "^";
+	calculationNumbers = "";
 	accumulator = 0;
 	currentNumber = 0;
 	output.innerHTML = calculationNumbers;

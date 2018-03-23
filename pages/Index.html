@@ -11,7 +11,7 @@
 	</head>
 
 	<body id="wrapper">
-		<div class="wrapper"><!--
+		<!--
 		ToDo - List
 		1. Menü
 		1.1 Menü erstezten mit eine Menü das sich durch 3 waagrechte Striche die übereinander liegen geöffnet. Inspiration: "Google Play Store". Realisierungs Idee überlegen um dieses Menü zu realisieren.
@@ -34,76 +34,75 @@
 		2.2.5	Buttons mit einem verschiebbare Balken (LabyMod3 Mneü - Inspiration) erstezten.
 		-->
 
-			<script type="text/javascript" src="../scripts/Calculator.js"></script>
-			<script type="text/javascript" src="../scripts/numblock.js"></script>
-			<script type="text/javascript" src="../scripts/history.js"></script>
-			<script type="text/javascript" src="../scripts/SideMenu.js"></script>
+		<script type="text/javascript" src="../scripts/Calculator.js"></script>
+		<script type="text/javascript" src="../scripts/numblock.js"></script>
+		<script type="text/javascript" src="../scripts/history.js"></script>
+		<script type="text/javascript" src="../scripts/SideMenu.js"></script>
 
-			<div class="calculationstring">
-				<span id="output"></span>
-				<span id="Ergebnis"></span>
-				
-				<div class="menuButtons">
-					<div class="sidemenubtn" onClick="toggleSideMenu()">
-						<img class="sidemenubtnImg" src="../img/menuBar/png_file_menuBar/MenuBarLightGreen.png" alt="">
-					</div>
-					<div class="sidemenubtn" onClick="toggleHistory()">
-						<img class="sidemenubtnImg" src="../img/history/png_history/HistoryLightGreen.png" alt="">
-					</div>
-					<div class="sidemenubtn" onClick="toggleHistory()">
-						<img class="sidemenubtnImg" src="../img/Querformat:wTR/png_Querformat:wTR/QuerformatWTR.png" alt="">
-						<a href="Querformat.html"></a>
-					</div>
+		<div class="calculationstring">
+			<span id="output"></span>
+			<span id="Ergebnis"></span>
+
+			<div class="menuButtons">
+				<div class="sidemenubtn" onClick="toggleSideMenu()">
+					<img class="sidemenubtnImg" src="../img/menuBar/png_file_menuBar/MenuBarLightGreen.png" alt="">
+				</div>
+				<div class="sidemenubtn" onClick="toggleHistory()">
+					<img class="sidemenubtnImg" src="../img/history/png_history/HistoryLightGreen.png" alt="">
+				</div>
+				<div class="sidemenubtn" onClick="toggleHistory()">
+					<img class="sidemenubtnImg" src="../img/Querformat:wTR/png_Querformat:wTR/QuerformatWTR.png" alt="">
+					<a href="Querformat.html"></a>
 				</div>
 			</div>
+		</div>
 
-			<div class="numblock">
-				<div id="sidemenuContent">
-					<a href="design.html">Design Individualisierung</a>
-					<a href="#">Wissenschaftlicher Taschenrechner</a>
-					<a href="#">Developer Taschenrechner</a>
-					<hr>
-					<a href="#">Support</a>
-				</div>
-				
-				<div id="historyContainer">
-					<h1>Verlauf</h1>
-					<ul id="history">
-					</ul>
-				</div>
-
-				<table id="numblockTable">
-					<tr class="height">
-						<td class="operations" onClick="reset()">C</td>
-						<td class="operations">(</td>
-						<td class="operations">)</td>
-						<td class="operations" onclick="multiply()">x</td>
-					</tr>
-					<tr class="height">
-						<td class="numbs" onclick="numblock7()">7</td>
-						<td class="numbs" onclick="numblock8()">8</td>
-						<td class="numbs" onclick="numblock9()">9</td>
-						<td class="operations" onclick="divide()">/</td>
-					</tr>
-					<tr class="height">
-						<td class="numbs" onclick="numblock4()">4</td>
-						<td class="numbs" onclick="numblock5()">5</td>
-						<td class="numbs" onclick="numblock6()">6</td>
-						<td class="operations" onClick="minus()">-</td>
-					</tr>
-					<tr class="height">
-						<td class="numbs" onclick="numblock1()">1</td>
-						<td class="numbs" onclick="numblock2()">2</td>
-						<td class="numbs" onclick="numblock3()">3</td>
-						<td class="operations" onClick="plus()">+</td>
-					</tr>
-					<tr class="height">
-						<td class="operations" colspan="2" onClick="numblock0">0</td>
-						<td class="operations" onclick="comma()">,</td>
-						<td class="equal" onClick="equal()">=</td>
-					</tr>
-				</table>
+		<div class="numblock">
+			<div id="sidemenuContent">
+				<a href="design.html">Design Individualisierung</a>
+				<a href="#">Wissenschaftlicher Taschenrechner</a>
+				<a href="#">Developer Taschenrechner</a>
+				<hr>
+				<a href="#">Support</a>
 			</div>
+
+			<div id="historyContainer">
+				<h1>Verlauf</h1>
+				<ul id="history">
+				</ul>
+			</div>
+
+			<table id="numblockTable">
+				<tr class="height">
+					<td class="operations" onClick="reset()">C</td>
+					<td class="operations">(</td>
+					<td class="operations">)</td>
+					<td class="operations" onclick="multiply()">x</td>
+				</tr>
+				<tr class="height">
+					<td class="numbs" onclick="numblock7()">7</td>
+					<td class="numbs" onclick="numblock8()">8</td>
+					<td class="numbs" onclick="numblock9()">9</td>
+					<td class="operations" onclick="divide()">/</td>
+				</tr>
+				<tr class="height">
+					<td class="numbs" onclick="numblock4()">4</td>
+					<td class="numbs" onclick="numblock5()">5</td>
+					<td class="numbs" onclick="numblock6()">6</td>
+					<td class="operations" onClick="minus()">-</td>
+				</tr>
+				<tr class="height">
+					<td class="numbs" onclick="numblock1()">1</td>
+					<td class="numbs" onclick="numblock2()">2</td>
+					<td class="numbs" onclick="numblock3()">3</td>
+					<td class="operations" onClick="plus()">+</td>
+				</tr>
+				<tr class="height">
+					<td class="operations" colspan="2" onClick="numblock0">0</td>
+					<td class="operations" onclick="comma()">,</td>
+					<td class="equal" onClick="equal()">=</td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>
