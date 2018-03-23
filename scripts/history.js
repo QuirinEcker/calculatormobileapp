@@ -1,13 +1,15 @@
+"use strict";
+
 function toggleHistory() {
 	let historyContainer = document.getElementById("historyContainer");
 	let spoiledSideMenu = document.getElementById("sidemenuContent");
-    if (historyContainer.style.display === "none") {
-		if (spoiledSideMenu.style.display === "block"){
-			spoiledSideMenu.style.display = "none"
+    if (historyContainer.style.height === "0%") {
+		if (spoiledSideMenu.style.height === "80%"){
+			spoiledSideMenu.style.height = "0%"
 		}
-        historyContainer.style.display = "block";
+        historyContainer.style.height = "80%";
     } else {
-        historyContainer.style.display = "none";
+        historyContainer.style.height = "0%";
     }
 }
 

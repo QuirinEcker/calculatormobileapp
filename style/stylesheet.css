@@ -17,11 +17,6 @@ p {
 }
 
 /*Numblock*/
-td {
-	border: 1px solid black;
-	height: 15px;
-	width: 15px;
-}
 
 .numbs {
 	background-color: white;
@@ -47,3 +42,11 @@ td {
 td:hover {
 	background-color: #B8B8B8;
 }
+
+#wrapper {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+
